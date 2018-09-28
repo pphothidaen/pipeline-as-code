@@ -18,7 +18,7 @@ def entities = [
     scm {
       git {
         remote {
-          url('https://github.com/suttiruk046/pipeline-as-code.git')
+          url('https://github.com/pphothidaen/pipeline-as-code.git')
           credentials('github-token')
         }
         branch('master')
