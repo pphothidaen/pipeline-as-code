@@ -22,7 +22,7 @@ create Master Seed pipeline script.
 1. specific project name : master
 2. in Source Code Management, specific Repository URL with https://github.com/suttiruk046/pipelines-as-code.git with your credential.
 3. in Build Triggers, checked Build periodically with * * * * *.
-4. in Build, checked Look on Filesystem and put templates/master_seed.groovy in DSL Scripts.
+4. in Build, checked Look on Filesystem DSL Scripts and put templates/master_seed.groovy in DSL Scripts.
 
 ## Your Detailed pipelines 
 detailed pipelines will be in company/seeds/*.groovy
