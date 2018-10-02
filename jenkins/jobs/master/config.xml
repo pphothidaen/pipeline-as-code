@@ -7,7 +7,7 @@
     <configVersion>2</configVersion>
     <userRemoteConfigs>
       <hudson.plugins.git.UserRemoteConfig>
-        <url>https://github.com/suttiruk046/pipeline-as-code.git</url>
+        <url>https://github.com/pphothidaen/pipeline-as-code.git</url>
         <credentialsId>github-com</credentialsId>
       </hudson.plugins.git.UserRemoteConfig>
     </userRemoteConfigs>
