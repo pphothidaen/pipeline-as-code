@@ -67,7 +67,7 @@ def deployment_pipelines = [
         script("""\
           def jf
           node(){
-              checkout changelog: false, poll: false, scm: [\$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [[\$class: 'RelativeTargetDirectory', relativeTargetDir: 'jenkinsfile'], [\$class: 'IgnoreNotifyCommit'], [\$class: 'WipeWorkspace']], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'github-com', url: 'https://github.com/suttiruk046/pipeline-as-code.git']]]
+              checkout changelog: false, poll: false, scm: [\$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [[\$class: 'RelativeTargetDirectory', relativeTargetDir: 'jenkinsfile'], [\$class: 'IgnoreNotifyCommit'], [\$class: 'WipeWorkspace']], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'github-com', url: 'https://github.com/pphothidaen/pipeline-as-code.git']]]
               checkout changelog: true, scm: [\$class: 'GitSCM', branches: [[name: '*/${branch}']], doGenerateSubmoduleConfigurations: false, extensions: [[\$class: 'RelativeTargetDirectory', relativeTargetDir: 'src'], [\$class: 'WipeWorkspace']], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'github-com', url: 'https://github.com/${repository}.git']]]
               jf = load 'jenkinsfile/company/templates/${template}'
               jf.defaultPipeline('${nodever}', '${cred}', '${osbc}', '${osproject}', '${tags}', '${buildSteps}', '${publish}')
