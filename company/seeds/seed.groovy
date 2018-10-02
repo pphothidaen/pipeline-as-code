@@ -2,12 +2,12 @@
 
 def deployment_pipelines = [
   [
-    repository: "suttiruk046/sb-helloworld",
+    repository: "pphothidaen/okd-workshop",
     jobfolder: "company",
-    jobname: "sb-helloworld",
-    nodever: "java8",
-    osbc: "sb-helloworld",
-    osproject: "company.sb-helloworld"
+    jobname: "okd-workshop-job",
+    nodever: "node8",
+    osbc: "okd-workshop",
+    osproject: "myproject"
   ]
 ].each { i ->
   if (i.containsKey('jobfolder')){
