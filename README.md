@@ -16,7 +16,7 @@ create Automatically approve pipeline scripts.
 2. checked Discard old builds with Strategy Log Rotation and Max # of build to keep with 1.
 3. in Source Code Management, specific Repository URL with https://github.com/pphothidaen/pipeline-as-code.git with your credential.
 4. in Build Triggers, checked Build periodically with */2 * * * *.
-5. in Build, checked Look on Filesystem and put templates/approve_scripts.groovy in DSL Scripts.
+5. in Build, checked Look on Filesystem and put templates/approve_jobs.groovy in DSL Scripts.
 
 create Master Seed pipeline script.
 1. specific project name : master
